@@ -1,0 +1,14 @@
+#Symmetric Difference and Membership Test
+class_a = [101, 102, 103, 104, 105]
+class_b = [103, 105, 106, 107, 108]
+set_a=set(class_a)
+set_b=set(class_b)
+if 102 in set_a:
+  print("True")
+else:
+  print("False")
+if 109 in set_b:
+  print("True")
+else:
+  print("False")
+print(set_a.symmetric_difference(set_b))
