@@ -1,0 +1,14 @@
+#(Fundamentals - Regex): Basic Search and Findall - Ready to Code!
+import re
+phone_pattern = r"\d{3}-\d{3}-\d{4}"
+sample_text = "My phone number is 123-456-7890. Call me at 987-654-3210 soon!"
+my_pattern=re.search(phone_pattern, sample_text)
+if my_pattern:
+    print(my_pattern.group())
+else:
+    print("No match found.")
+my_pattern1=re.findall(phone_pattern, sample_text)
+if my_pattern1:
+    print(my_pattern1)
+else:
+    print("No match found.")
